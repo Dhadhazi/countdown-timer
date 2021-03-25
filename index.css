@@ -34,6 +34,26 @@ body {
   align-items: center;
 }
 
+.socialIcons{
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.socialIcons>svg{
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.socialIcons>svg:hover path{
+  fill: var(--softred);
+  transition: all ease 0.3s;
+}
+
+.socialIcons>svg path{
+  transition: all ease 0.3s;
+}
+
 
 .hills{
   position: absolute;
