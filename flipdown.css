@@ -31,7 +31,7 @@
 }
 /* Hinge */
 .flipdown.flipdown__theme-dark .rotor:after {
-  border-top: solid 1px var(--verydarkblue);
+  border-top: solid 1px var(--verydarkblue);  
 }
 
 /* END OF THEMES */
@@ -127,6 +127,7 @@
   height: 120px;
   transform-style: preserve-3d;
   transition: transform 0s;
+  
 }
 
 .flipdown .rotor-leaf.flipped {
@@ -180,16 +181,10 @@
 }
 
 
-@media (max-width: 550px) {
-
-  .flipdown {
-    width: 312px;
-    height: 70px;
-  }
+@media (max-width: 740px) {
 
   .flipdown .rotor {
-    font-size: 2.2rem;
-    margin-right: 3px;
+    font-size: 10vw;
   }
 
   .flipdown .rotor,
@@ -199,11 +194,12 @@
   .flipdown .rotor-top,
   .flipdown .rotor-bottom,
   .flipdown .rotor:after {
-    width: 30px;
+    width: 20vw;
   }
 
   .flipdown .rotor-group {
-    padding-right: 20px;
+    padding-right: 10px;
+    letter-spacing: normal;
   }
 
   .flipdown .rotor-group:last-child {
@@ -211,9 +207,9 @@
   }
 
   .flipdown .rotor-group-heading:before {
-    font-size: 0.8rem;
-    height: 20px;
-    line-height: 20px;
+    font-size: 2.5vw;
+    height: 50px;
+    line-height: 50px;
   }
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before,
@@ -223,24 +219,24 @@
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before {
     bottom: 13px;
-    height: 8px;
+    height: 16px;
     width: 8px;
   }
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
     bottom: 29px;
-    height: 8px;
+    height: 16px;
     width: 8px;
   }
 
   .flipdown .rotor-leaf-front,
   .flipdown .rotor-top {
-    line-height: 50px;
+    line-height: 20vw;
   }
 
   .flipdown .rotor-leaf,
   .flipdown .rotor {
-    height: 50px;
+    height: 20vw;
   }
 
   .flipdown .rotor-leaf-front,
@@ -248,6 +244,6 @@
   .flipdown .rotor-top,
   .flipdown .rotor-bottom,
   .flipdown .rotor:after {
-    height: 25px;
+    height: 10vw;
   }
 }

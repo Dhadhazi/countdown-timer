@@ -65,8 +65,9 @@ body {
 }
 
 .socialIcons>svg{
-  margin: 0px 10px;
+  margin: 0px 20px;
   cursor: pointer;
+  transform: scale(1.4);
 }
 
 .socialIcons>svg:hover path{
@@ -83,4 +84,21 @@ body {
   position: absolute;
   bottom: 0;
   z-index: 1;
+  height: 197px;
+  width: 100%;
+  background-image: url("./images/pattern-hills.svg");
+}
+
+@media (max-width: 740px) {
+
+  .title{
+    width: 80vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .socialIcons>svg{
+  margin: 0px 30px;
+  transform: scale(1.3);
+}
 }
