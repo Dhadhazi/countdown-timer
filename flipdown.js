@@ -325,14 +325,6 @@ class FlipDown {
     this.clockStrings.m = pad(this.clockValues.m, 2);
     this.clockStrings.s = pad(this.clockValues.s, 2);
 
-    // Concat clock value strings
-    this.clockValuesAsString = (
-      this.clockStrings.d +
-      this.clockStrings.h +
-      this.clockStrings.m +
-      this.clockStrings.s
-    ).split("");
-
     this.clockValuesAsString = [
       this.clockValues.d,
       this.clockValues.h,
