@@ -13,7 +13,30 @@ body {
   --blackblue: hsl(234, 17%, 12%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.outerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.mainContainer{
+  position: relative;
+  background-color: var(--verydarkblue);
+  background-image: url("./images/bg-stars.svg");
+  height: 800px;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.hills{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
 }
