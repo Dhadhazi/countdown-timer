@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="flipdown.css" />
+    <script src="flipdown.js"></script>
     <title>Launching soon..</title>
   </head>
   <body>
     <div class="outerContainer">
       <div class="mainContainer">
-        <div class="title">WE'RE LAUNCHING SOON</div>
-        <div>TIMERSTUFF</div>
+        <div class="timerContainer">
+          <div class="title">WE'RE LAUNCHING SOON</div>
+          <div class="flipdownContainer">
+            <div id="flipdown" class="flipdown"></div>
+          </div>
+        </div>
         <div class="socialIcons">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path
@@ -38,4 +44,9 @@
       </div>
     </div>
   </body>
+  <script>
+    new FlipDown(1648204871, {
+      theme: "dark",
+    }).start();
+  </script>
 </html>

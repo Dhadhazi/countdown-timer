@@ -24,22 +24,39 @@ body {
 
 .mainContainer{
   position: relative;
-  background-color: var(--verydarkblue);
+  background: var(--blackblue);
   background-image: url("./images/bg-stars.svg");
   height: 800px;
   width: 1440px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
+
+.timerContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  flex: 1;
+}
+
 .title{
-  margin-top: 150px;
+  margin-top: 10rem;
   color: white;
   font-size: 1.3rem;
   letter-spacing: 0.5rem;
+  margin-bottom: 5rem;
 }
+
+.flipdownContainer{
+  display: flex;
+  gap: 1rem;
+}
+
+/* SOCIAL CIONS */
 
 .socialIcons{
   position: relative;
